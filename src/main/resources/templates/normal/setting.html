@@ -1,0 +1,36 @@
+<html  xmlns:th="http://www.thymleaf.org" th:replace="normal/base::layout(~{::div})">
+	<title>about page</title>
+	<body>
+		
+		<div>
+			
+			<form class="card1" th:action="@{/user/change-password}" method="post"  >
+				<h2 >Change password</h2>
+				<br>
+				<input type="hidden" th:value="${user.id}" >
+				
+ <div class="input-group mb-3">
+  
+  <input  type="password" name="oldpassword" class="form-control" placeholder="Enter old password here" required aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+ 
+  <input   type="password" name="newpassword" class="form-control" placeholder="Enter New password here" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div>
+	<button type="submit" class="btn btn-success" >Change Password</button>
+	
+</div>
+
+</form>
+<script>
+	$(document).ready(()=>{
+		$(".item").removeClass("active");
+		$("#setting-link").addClass("active");
+		
+	})
+ </script>
+</div>
+	</body>
+</html>

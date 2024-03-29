@@ -1,0 +1,2 @@
+# smartcontactmanager
+ Developed a robust contact management system with Spring Security integration. Implemented user registration and authentication for secure access. Integrated CRUD operations for managing contact details efficiently. Designed user profiles with customizable fields and enabled profile editing. Ensured data privacy by enforcing strict access controls, allowing each user to access only their own contacts.

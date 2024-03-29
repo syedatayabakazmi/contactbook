@@ -1,0 +1,63 @@
+<html  xmlns:th="http://www.thymleaf.org" th:replace="normal/base::layout(~{::div})">
+	<title>about page</title>
+	<body>
+		
+		<div>
+			
+			<form class="card1" th:object="${contact}" method="post" th:action="@{'/user/process-update/'+${contact.cid}}" enctype="multipart/form-data">
+				<h2 class="text-center">Update Contact</h2>
+				<input type="hidden" th:value="${contact.cid}" >
+				
+ <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-plus"></i></span>
+  </div>
+  <input th:value="${contact.name}" type="text" name="name" class="form-control" placeholder="Enter name here" required aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+  </div>
+  <input  th:value="${contact.secondName}" type="text" name="secondName" class="form-control" placeholder="Enter Nick name here" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+  <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone"></i></span>
+  </div>
+  <input  th:value="${contact.phone}" type="number" name="phone" class="form-control" required  placeholder="Enter Phone Number here" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
+  </div>
+  <input  th:value="${contact.email}" type="email" name="email" required class="form-control" placeholder="Enter Email here" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-briefcase"></i></span>
+  </div>
+  <input  th:value="${contact.work}" type="text" name="work" class="form-control" placeholder="Enter Work here" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <textarea  th:text="${contact.description}" rows="6" cols="130" name="description" placeholder="Write description here"></textarea>
+</div>
+
+<div>
+	<img style="height: 100px; width: 100px; border-radius: 50%;" th:src="@{'/img/'+${contact.imageUrl}}">
+</div>
+<p>Choose another profile picture</p>
+<div class="input-group mb-3">
+  <input type="file" name="profileImage">
+</div>
+
+<div class="text-center">
+	<button type="submit" class="btn btn-outline-primary" >Update Contact</button>
+</div>
+
+</form></div>
+	</body>
+</html>

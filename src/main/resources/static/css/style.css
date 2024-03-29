@@ -1,0 +1,191 @@
+body{
+	background: rgb(228, 228, 228);
+}
+
+.image{
+	height: 30px;
+	width: 30px;
+	
+}
+
+.himg{
+	height: 100%;
+	width: 100%;
+	padding: 5px;
+	
+	
+}
+
+
+
+.sidebar{
+	width: 18%;
+	background-color: white;
+	padding-top: 50px;
+	height: 80%;
+	position: fixed;
+	
+}
+.sidebar a{
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: gray;
+	
+}
+
+.sidebar a:hover{
+	background-color: #e2e2e2;
+}
+
+.content{
+	margin-left: 20%;
+	margin-top: 70px;
+	position: relative;
+	
+
+	
+}
+
+.footer {
+    width: 100%;
+   margin-top: 70px;
+    background-color: #007bff;
+    color: #fff;
+  
+  
+  
+  
+    text-align: center;
+}
+
+.card1{
+	background-color: white;
+	width: 100%;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	
+}
+
+
+
+.detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Center vertically */
+  
+}
+
+.card2 {
+	margin-left: 35%;
+	margin-top: 2%;
+	
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    text-align: center;
+}
+
+.profile-img {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 120px;
+    height: 120px;
+    background-color: #ccc; /* Example placeholder color */
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px; /* Center horizontally and add bottom margin */
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+.prfl{
+	background-color: white;
+	margin-right: 2%;
+	
+}
+
+.prfl p{
+	margin-bottom: 2px;
+}
+.prfl h2{
+	margin-bottom: 2px;
+}
+
+
+
+
+ .home {
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+      
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: rgb(128, 128, 255);
+            color: white;
+        }
+        
+        
+        
+        .active{
+			background-color: rgb(192, 192, 192);
+		}
+		
+		
+.active1{
+border-bottom: 1px solid black
+}
+
+
+
+
+.search-input{
+	position: relative;
+}
+
+.search-result{
+	position: absolute;
+	padding: 10px;
+	border: 1px solid grey;
+	width: 90%;
+	background-color: white;
+}

@@ -1,0 +1,41 @@
+<html xmlns:th="http://www.thymleaf.org" th:replace="base::layout(~{::section})">
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" th:href="@{/css/style.css}">
+    <title >Dashboard</title>
+  </head>
+	
+	<body>
+		<section>
+			<br><br><br><br>
+			<div class="bootstrap-wrapper d-flex">
+			<div class="col-5">
+				<h1 style="font-weight: bold; margin: 20px;" >Welcome To Smart Contact Manager</h1>
+			<p style="font-size: large; margin:20px; text-align: justify;">
+"Transform your contact management experience with our smart platform. Say hello to streamlined organization,
+ effortless engagement, and enhanced productivity. Join us and revolutionize the way you connect!"</p>
+
+	<a  th:href="@{/register}"> <button class="btn btn-primary" style="margin: 20px;"> GET START</button></a> 
+
+			</div>
+			<div >
+			 <img th:src="@{/img/contact.png}" class="himg"/>
+			 </div></div>
+			
+			
+			 <script>
+	$(document).ready(()=>{
+		$(".nav-link").removeClass("active");
+		$("#dashboard-link").addClass("active1");
+		
+	})
+ </script>
+		</section>
+		
+	</body>
+</html>

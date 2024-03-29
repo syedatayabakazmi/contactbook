@@ -1,0 +1,23 @@
+<html  xmlns:th="http://www.thymleaf.org" th:replace="normal/base::layout(~{::div})">
+	
+	<head>
+		<title>Contact Manager</title>
+   
+</head>
+<body>
+<div class="prfl text-center">
+	<div class="home">
+    <img src="https://cdn.dribbble.com/users/2069369/screenshots/4276636/call_center.gif" alt="Contact Manager" style="width: 420px;">
+    <h1>Welcome to Contact Manager</h1>
+    <p>Start adding your contacts now!</p>
+    <a th:href="@{/user/addcontact}" class="button">Add Contact</a>
+</div></div>
+<script>
+	$(document).ready(()=>{
+		$(".item").removeClass("active");
+		$("#home-link").addClass("active");
+		
+	})
+ </script>
+</body>
+</html>

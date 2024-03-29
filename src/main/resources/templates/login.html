@@ -1,0 +1,76 @@
+
+	<!DOCTYPE html>
+<html  xmlns:th="http://www.thymleaf.org" th:replace="base::layout(~{::section})">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Please sign in</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" integrity="sha384-oOE/3m0LUMPub4kaC09mrdEhIc+e3exm4xOGxAmuFXhBNF4hcg/6MiAXAf5p0P56" crossorigin="anonymous"/>
+  </head>
+	<body>
+		<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="https://www.pinclipart.com/picdir/big/212-2129001_mobile-app-development-services-business-login-illustration-png.png"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form class="form-signin" method="post" th:action="@{/login}" action="#"style="width:90%; margin:50px; border: 2px solid rgb(192, 192, 192); padding: 25px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+          <div class="d-flex flex-row align-items-center justify-content-center ">
+            <h1 class="mb-5">Login Here</h1>
+        
+          </div>
+           <div th:if="${param.error}" class="alert alert-danger">
+			 Invalid username or password!
+		 </div>
+		 
+		  <div th:if="${param.logout}" class="alert alert-success">
+			You have been logged out!
+		 </div>
+
+         
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="form3Example3" class="form-control form-control-lg" name="username"
+              placeholder="Enter a valid email address" />
+            <label class="form-label" for="form3Example3">Username</label>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <input type="password" id="form3Example4" class="form-control form-control-lg" name="password"
+              placeholder="Enter password" />
+            <label class="form-label" for="form3Example4">Password</label>
+          </div>
+
+        
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button type="submit" class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+              th:href="@{/register}"  class="link-danger">Register</a></p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Right -->
+  </div>
+   <script>
+	$(document).ready(()=>{
+		$(".nav-link").removeClass("active");
+		$("#login-link").addClass("active1");
+		
+	})
+ </script>
+</section>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<html  xmlns:th="http://www.thymleaf.org" th:replace="normal/base::layout(~{::div})">
+	<title>about page</title>
+	<head>
+		<link rel="stylesheet" th:href="@{/css/details.css}">
+	</head>
+	<body>
+		<div th:if="${session.message}">
+			 <div th:classappend="${'alert-'+session.message.type}" class="alert">
+			<span th:text="${session.message.content}"></span>
+			
+		 </div>
+		
+		 </div>
+		<div class="prfl text-center">
+		<div th:if="${contact}" ><h1 style="padding-top: 25px; padding-bottom: 0%;">Contact Details</h1>
+	
+			
+		<div class="card2">
+  <div ><img class="profile-img" th:src="@{'/img/'+${contact.imageUrl}}"></div>
+  <h2 th:text="${contact.name}">
+   
+  </h2>
+  <p th:text="${contact.work}"></p>
+  <p th:text="${contact.email}"></p>
+  <p th:text="${contact.phone}"></p>
+  <br>
+  <div class="description" th:text="${contact.description}">
+    
+  </div>
+  	  <form method="post" th:action="@{'/user/updatecontact/'+${contact.cid}}">
+  <button class="btn btn-primary">Edit Profile</button></form>
+  <button th:onclick="|deletecontact(${contact.cid})|" class="btn btn-danger">Delete</button>
+ 
+</div><br><br>
+		</div>
+		<div th:unless="${contact}" class="text-center bg-danger text-white p-2" >
+			<h1>Your don't have permission to see this contact</h1>
+		</div>
+		</div>
+	</body>
+</html>

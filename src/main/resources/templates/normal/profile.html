@@ -1,0 +1,54 @@
+<html xmlns:th="http://www.thymleaf.org" th:replace="normal/base::layout(~{::div})">
+<head>
+    <title>About Page</title>
+</head>
+<body>
+<div class="prfl text-center">
+    <div th:if="${user}">
+        <h1 style="padding-top: 25px; padding-bottom: 0%;">Your Profile</h1>
+
+        <div class="card2">
+            <div>
+                <img class="profile-img" th:src="@{'/img/'+${user.imageUrl}}">
+            </div>
+            <table class="table table-bordered">
+                <tbody>
+                <tr>
+                    <th>Name:</th>
+                    <td th:text="${user.name}"></td>
+                </tr>
+                <tr>
+                    <th>Role:</th>
+                    <td th:text="${user.role}"></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td th:text="${user.email}"></td>
+                </tr>
+                <tr>
+                    <th>Enabled:</th>
+                    <td th:text="${user.enabled}"></td>
+                </tr>
+                <tr>
+                    <th>About:</th>
+                    <td th:text="${user.about}"></td>
+                </tr>
+                </tbody>
+            </table>
+
+          <form method="post" th:action="@{'/user/updateuser/'+${user.id}}">
+  <button class="btn btn-primary">Edit Profile</button></form>
+           
+        </div>
+        <br><br>
+    </div>
+    <script>
+	$(document).ready(()=>{
+		$(".item").removeClass("active");
+		$("#profile-link").addClass("active");
+		
+	})
+ </script>
+</div>
+</body>
+</html>
