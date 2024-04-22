@@ -1,4 +1,4 @@
-package com.contactmanager.smartcontactmanager.helper;
+package com.contact.contactbook.helper;
 
 import org.springframework.context.annotation.Configuration;
 

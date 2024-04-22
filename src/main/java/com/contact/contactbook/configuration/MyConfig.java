@@ -1,4 +1,4 @@
-package com.contactmanager.smartcontactmanager.configuration;
+package com.contact.contactbook.configuration;
 
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter;
 import org.springframework.context.annotation.Bean;

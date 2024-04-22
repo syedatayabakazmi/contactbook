@@ -11,8 +11,8 @@
 	<groupId>com.contactmanager</groupId>
 	<artifactId>smartcontactmanager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>smartcontactmanager</name>
-	<description>smart contact manager project for Spring Boot</description>
+	<name>contactbook</name>
+	<description>contact book project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

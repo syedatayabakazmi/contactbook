@@ -1,4 +1,4 @@
-package com.contactmanager.smartcontactmanager.entities;
+package com.contact.contactbook.entities;
 
 import java.util.ArrayList;
 import java.util.List;

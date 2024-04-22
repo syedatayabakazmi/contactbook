@@ -1,10 +1,10 @@
-package com.contactmanager.smartcontactmanager.repo;
+package com.contact.contactbook.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.contactmanager.smartcontactmanager.entities.User;
+import com.contact.contactbook.entities.User;
 
 public interface UserRepository extends JpaRepository<User, Integer>{
 @Query("select u from User u where u.email= :email")

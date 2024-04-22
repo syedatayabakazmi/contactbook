@@ -1,12 +1,12 @@
-package com.contactmanager.smartcontactmanager.configuration;
+package com.contact.contactbook.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.contactmanager.smartcontactmanager.entities.User;
-import com.contactmanager.smartcontactmanager.repo.UserRepository;
+import com.contact.contactbook.entities.User;
+import com.contact.contactbook.repo.UserRepository;
 
 public class UserDetailServiceImpl implements UserDetailsService {
 

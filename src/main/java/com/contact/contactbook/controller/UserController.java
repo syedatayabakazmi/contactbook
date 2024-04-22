@@ -1,4 +1,4 @@
-package com.contactmanager.smartcontactmanager.controller;
+package com.contact.contactbook.controller;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -27,11 +27,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.contactmanager.smartcontactmanager.entities.Contact;
-import com.contactmanager.smartcontactmanager.entities.User;
-import com.contactmanager.smartcontactmanager.helper.Message;
-import com.contactmanager.smartcontactmanager.repo.ContactRepository;
-import com.contactmanager.smartcontactmanager.repo.UserRepository;
+import com.contact.contactbook.entities.Contact;
+import com.contact.contactbook.entities.User;
+import com.contact.contactbook.helper.Message;
+import com.contact.contactbook.repo.ContactRepository;
+import com.contact.contactbook.repo.UserRepository;
 
 import jakarta.servlet.http.HttpSession;
 

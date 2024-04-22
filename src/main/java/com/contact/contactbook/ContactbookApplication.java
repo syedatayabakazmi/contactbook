@@ -1,13 +1,13 @@
-package com.contactmanager.smartcontactmanager;
+package com.contact.contactbook;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SmartcontactmanagerApplication {
+public class ContactbookApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SmartcontactmanagerApplication.class, args);
+		SpringApplication.run(ContactbookApplication.class, args);
 	}
 
 }

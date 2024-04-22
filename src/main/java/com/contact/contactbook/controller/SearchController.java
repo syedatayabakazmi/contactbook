@@ -1,4 +1,4 @@
-package com.contactmanager.smartcontactmanager.controller;
+package com.contact.contactbook.controller;
 
 import java.security.Principal;
 import java.util.List;
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.contactmanager.smartcontactmanager.entities.Contact;
-import com.contactmanager.smartcontactmanager.entities.User;
-import com.contactmanager.smartcontactmanager.repo.ContactRepository;
-import com.contactmanager.smartcontactmanager.repo.UserRepository;
+import com.contact.contactbook.entities.Contact;
+import com.contact.contactbook.entities.User;
+import com.contact.contactbook.repo.ContactRepository;
+import com.contact.contactbook.repo.UserRepository;
 
 @RestController
 public class SearchController {
